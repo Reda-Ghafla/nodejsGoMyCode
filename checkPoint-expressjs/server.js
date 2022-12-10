@@ -11,12 +11,17 @@ app.use(express.static('public'));
 
 // const pathPage = path.join(__dirname, './views/page/homePage.pug');
 
-// app.use('/', (req, res, next) => {
-//   // fullDate(new Date());
-//   next();
-// });
+app.use('*', (req, res, next) => {
+  new Date().getHours() >= 10 || new Date().getHours() > 17
+    ? next()
+    : res.send('out');
+});
+
+// console.log(datenNow.getHours());
 
 app.get('/', (req, res) => {
+  // let dateNow = new Date();
+
   res.render(path.join(__dirname, './views/pages/homePage.pug'), {
     info: {
       domaine: 'Agency Services',
