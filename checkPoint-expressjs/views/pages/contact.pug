@@ -1,0 +1,69 @@
+doctype doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        title  #{info.title} | #{info.domaine}
+        style. 
+            *{
+                margin : 0 ;
+                padding : 0;
+            }
+            body{
+                display : flex;
+                flex-direction : column;
+                justify-content : space-between;
+                height : 100vh;
+                background-color : blanchedalmond;
+            }
+            header {
+                background-color: #20215d;
+                color: #fff;
+                display : flex;
+                justify-content: space-between;
+                align-items : center;
+                height : 5rem
+            }
+            .cc, ul {
+                display : flex;
+                justify-content: space-between;
+                align-items : center 
+            }
+
+            li {
+                list-style: none;
+                margin-right: 1rem;
+            }
+            a{
+                text-decoration: none;
+                color : white ;
+            }
+            section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1;
+                flex-direction : column;
+                width : 80vw;
+                margin : 0 auto;
+            }
+            p {
+                font-size: 1rem;
+                background-color: brown;
+            }
+            footer{
+                height : 5rem;
+                background-color : 20215d;
+            }
+    body 
+       
+        include  ../includes/header
+
+        section 
+            h1 Contact Page
+            h3 contact us 
+            input(type= "text" placeholder = "your email")
+
+        include ../includes/footer

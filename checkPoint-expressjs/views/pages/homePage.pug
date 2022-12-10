@@ -1,0 +1,21 @@
+doctype doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./main.css")
+        title  #{info.title} | #{info.domaine}
+        
+        style
+            include ../../public/css/styles.css
+
+         
+    body 
+        
+        include  ../includes/header
+
+        section.section
+            time #{info.time}
+            p.paragraph Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, reprehenderit, est laudantium cupiditate, distinctio magnam possimus vel ratione sunt ad qui! Qui, error assumenda. At ipsa deleniti qui reprehenderit unde!
+        include ../includes/footer

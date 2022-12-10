@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Create web app using express with 3 page ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reda-Ghafla/nodejsGoMyCode.git"
+  },
+  "keywords": [
+    "Express.js",
+    "nodejs",
+    "Reactjs"
+  ],
+  "author": "Reda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reda-Ghafla/nodejsGoMyCode/issues"
+  },
+  "homepage": "https://github.com/Reda-Ghafla/nodejsGoMyCode#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

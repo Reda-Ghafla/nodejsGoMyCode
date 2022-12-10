@@ -1,0 +1,29 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 0 2rem;
+    height: 5rem;
+}
+
+.link {
+    width: 70%;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,13 @@
+body {
+  background: #000;
+}
+
+.section {
+  background-color: #20215d;
+  color: blanchedalmond;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1;
+}
