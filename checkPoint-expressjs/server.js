@@ -57,7 +57,7 @@ app.get('*', (req, res) => {
   res.render(path.join(__dirname, './views/pages/404.pug'), {
     info: {
       domaine: 'Agency Services',
-      title: '404',
+      title: 'np',
       message: 'Oops!! Page not Found',
       logo: '/img/avatar-ali.png',
       time: `${fullDate(new Date())}`,
