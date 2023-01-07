@@ -7,33 +7,6 @@ const app = express();
 
 app.use(express.json());
 
-const dbUsers = [
-  {
-    firstName: 'Imad',
-    lastName: 'Atik',
-    userName: 'imadatik',
-    userEmail: 'imad@imad.tk',
-    password: 'couc124',
-    isApproved: true,
-  },
-  {
-    firstName: 'Karim',
-    lastName: 'Anwar',
-    userName: 'karimAnwar',
-    userEmail: 'karim@anouar.tk',
-    password: 'Merci124',
-    isApproved: true,
-  },
-  {
-    firstName: 'Hakim',
-    lastName: 'Balak',
-    userName: 'hakimibalak',
-    userEmail: 'hakimi@balak.tk',
-    password: 'truthy123',
-    isApproved: false,
-  },
-];
-
 // get all users
 app.get('/', async (req, res) => {
   const allUsers = await Users.find({}).sort('name');
