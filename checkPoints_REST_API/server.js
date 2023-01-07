@@ -34,20 +34,8 @@ const dbUsers = [
   },
 ];
 
-const createUser = async (usersDB) => {
-  //   let usersDB = new Users(dbUsers.map((user) => user));
-  Users.create(usersDB, (err, infoUsers) => {
-    if (err) {
-      return err;
-    } else {
-      return infoUsers;
-    }
-  });
-};
-
 // get all users
 app.get('/', async (req, res) => {
-  createUser(dbUsers);
   const allUsers = await Users.find({}).sort('name');
   res.send(allUsers);
 });
@@ -59,7 +47,7 @@ app.post('/', async (req, res) => {
     lastName: req.body.lastName,
     userName: req.body.userName,
     userEmail: req.body.userEmail,
-    password: req.body.firstName,
+    password: req.body.password,
     isApproved: req.body.isApproved,
   });
 
